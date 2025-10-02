@@ -77,9 +77,6 @@
             <Private>False</Private>
         </Reference>
     </ItemGroup>
-    <ItemGroup>
-        <Analyzer Include="packages\UniverseLib.Analyzers.1.0.4\analyzers\dotnet\cs\UniverseLib.Analyzers.dll" />
-    </ItemGroup>
     <Target Name="DeleteFileIL2CPP" AfterTargets="Build" Condition="'$(Configuration)' == 'Release_IL2CPP'">
         <Delete Files="$(TargetDir)MelonPrefManager.IL2CPP.pdb" />
     </Target>
